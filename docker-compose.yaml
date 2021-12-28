@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - redis
+    ports:
+      - 4555:3000
+    command: [ "node", "src/index" ]
+  processor:
+    build: .
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - redis
+    command: [ "node", "src/processor" ]
+  redis:
+    image: redis:4-alpine

@@ -1,0 +1,19 @@
+{
+  "name": "bull_sample_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bull": "^4.2.0",
+    "bull-arena": "^3.29.3",
+    "express": "^4.17.2",
+    "ioredis": "^4.28.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
